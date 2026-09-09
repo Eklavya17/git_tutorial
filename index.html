@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Eklavya Tyagi — Computer Science, AI security, systems, and research." />
+  <title>Eklavya Tyagi</title>
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --surface: #12161b;
+      --text: #f4f7fb;
+      --muted: #9aa4b2;
+      --border: #252b33;
+      --accent: #8ab4ff;
+      --max: 980px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      width: min(calc(100% - 40px), var(--max));
+      margin: 0 auto;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(14px);
+      background: rgba(11, 13, 16, 0.82);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav .container {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand { color: var(--text); font-weight: 700; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 18px; font-size: 0.95rem; }
+    .nav-links a { color: var(--muted); }
+
+    header { padding: 110px 0 78px; border-bottom: 1px solid var(--border); }
+    .eyebrow { color: var(--accent); font-weight: 600; margin-bottom: 14px; }
+    h1 { font-size: clamp(3rem, 8vw, 6.3rem); line-height: 0.98; margin: 0 0 24px; letter-spacing: -0.055em; }
+    .intro { max-width: 760px; color: var(--muted); font-size: 1.18rem; margin-bottom: 26px; }
+    .links { display: flex; flex-wrap: wrap; gap: 16px; }
+
+    section { padding: 76px 0; border-bottom: 1px solid var(--border); }
+    .section-title { font-size: 1.85rem; margin: 0 0 30px; letter-spacing: -0.02em; }
+
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .card {
+      padding: 24px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      border-radius: 16px;
+    }
+    .card h3 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--muted); }
+    .meta { color: var(--muted); font-size: 0.92rem; margin-bottom: 10px; }
+
+    .experience-item { margin-bottom: 34px; }
+    .experience-item:last-child { margin-bottom: 0; }
+    .experience-item h3 { margin: 0; }
+    .experience-item p { color: var(--muted); margin: 7px 0 0; }
+
+    .placeholder {
+      border: 1px dashed #39414c;
+      background: transparent;
+      color: var(--muted);
+    }
+
+    footer { padding: 42px 0 64px; color: var(--muted); }
+
+    @media (max-width: 720px) {
+      nav .container { align-items: flex-start; flex-direction: column; padding: 15px 0; }
+      .grid { grid-template-columns: 1fr; }
+      header { padding-top: 76px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a class="brand" href="#top">Eklavya Tyagi</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="top">
+    <div class="container">
+      <div class="eyebrow">Computer Science · AI Security · Systems</div>
+      <h1>Eklavya Tyagi</h1>
+      <p class="intro">
+        Computer Science student at the University of Illinois Urbana-Champaign working on AI security,
+        agentic systems, applied machine learning, and systems research.
+      </p>
+      <div class="links">
+        <a href="https://github.com/Eklavya17/">GitHub</a>
+        <a href="https://www.linkedin.com/in/eklavya-tyagi-32b320278/">LinkedIn</a>
+        <a href="mailto:etyagi2@illinois.edu">Email</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="card placeholder">
+          Replace this with a short personal introduction: what you study, the research problems you care about,
+          what you are currently building, and the kinds of roles or collaborations you are interested in.
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="experience-item">
+          <h3>System Security Foundations Lab — Student Researcher</h3>
+          <div class="meta">Prof. Luyi Xing · May 2026 – Present</div>
+          <p>
+            AI security research focused on Agent Data Injection, real-world agent vulnerabilities,
+            proof-of-concept development, and defenses for provenance and trust-boundary failures.
+          </p>
+        </div>
+
+        <div class="experience-item">
+          <h3>NCSA — Data Science Research Intern</h3>
+          <div class="meta">May 2023 – Sep 2024</div>
+          <p>
+            Built LLM-driven scientific research pipelines for astronomy using Python, GPT-4, LangChain,
+            SQL, MongoDB, and scientific tool orchestration.
+          </p>
+        </div>
+
+        <div class="experience-item">
+          <h3>Studio — Game Development Programmer</h3>
+          <div class="meta">May 2024 – May 2025</div>
+          <p>
+            Developed VR simulation, physics, interaction, and gameplay systems in Unreal Engine, C++, and Blueprints.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="container">
+        <h2 class="section-title">Research</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Agent Data Injection</h3>
+            <p>
+              Research on how attacker-controlled data can impersonate trusted agent data such as metadata,
+              provenance, tool output, or action handles.
+            </p>
+            <p style="margin-top: 12px;"><a href="https://arxiv.org/html/2607.05120v1">Paper →</a></p>
+          </article>
+
+          <article class="card placeholder">
+            <h3>Future research</h3>
+            <p>Add your next paper, research project, poster, artifact, or write-up here.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Coren</h3>
+            <p>
+              Generative-search visibility platform for measuring how companies appear across ChatGPT,
+              Claude, Gemini, Perplexity, and AI Overviews.
+            </p>
+            <p style="margin-top: 12px;"><a href="https://usecoren.com/">Website →</a></p>
+          </article>
+
+          <article class="card">
+            <h3>AI-Driven Quantitative Trading Strategy</h3>
+            <p>
+              Multi-agent research prototype for generating, validating, backtesting, and evaluating trading strategies.
+            </p>
+          </article>
+
+          <article class="card placeholder">
+            <h3>Project title</h3>
+            <p>Add a two-to-three sentence project description, technologies, GitHub link, and demo link.</p>
+          </article>
+
+          <article class="card placeholder">
+            <h3>Project title</h3>
+            <p>Add another project here.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="intro">
+          For research, engineering, or startup conversations, reach me at
+          <a href="mailto:etyagi2@illinois.edu">etyagi2@illinois.edu</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© Eklavya Tyagi</div>
+  </footer>
+</body>
+</html>
